@@ -23,32 +23,9 @@ d'encastrement mural** standard. Format interrupteur européen **86 × 86 mm**.
 
 | Paramètre | Valeur |
 |---|---|
-| Façade | 86 × 86 mm |
-| Découpe écran CYD | 76 × 57 mm |
-| Trous fixation CYD | M2.5 — entraxe 70.5 × 51.5 mm |
-| Trous fixation boîtier | M3.5 — entraxe 60 × 69 mm |
-
-## Fichiers
-
-| Fichier | Usage |
-|---|---|
-| `panel_front.svg` | Source vectorielle Inkscape — éditable |
-| `panel_front.dxf` | Découpe laser / CNC (à générer depuis le SVG) |
-
-### Génération DXF depuis Inkscape
-
-1. Ouvrir `panel_front.svg`
-2. Sélectionner calques `cut` et `engrave` uniquement
-3. `Fichier → Enregistrer une copie → DXF R12`
-4. Vérifier l'échelle 1:1 en mm
-
-### Calques laser
-
-| Couleur | Calque | Action |
-|---|---|---|
-| Rouge `#FF0000` | `cut` | Découpe traversante |
-| Bleu `#0000FF` | `engrave` | Gravure texte |
-| Gris `#AAAAAA` | `dim` | Cotations — ne pas graver |
+| Façade | 85 × 150 mm |
+| Découpe écran CYD | 45 × 60 mm |
+| Trous fixation boîtier | M3 — entraxe 135 mm |
 
 ## Commander
 
