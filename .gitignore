@@ -1,0 +1,24 @@
+# Arduino IDE
+*.ino.esp32.bin
+*.ino.bootloader.bin
+*.ino.partitions.bin
+build/
+
+# EasyEDA backups
+*.bak
+*.tmp
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Éditeurs
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Archives temporaires
+*.zip.tmp

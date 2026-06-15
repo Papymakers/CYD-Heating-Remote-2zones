@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Façade avant — ESP32 CYD Heating Remote
+  Papy Makers — 2026
+
+  Boîtier encastrable 86 × 86 mm (format interrupteur européen)
+  Unités : mm — échelle 1:1
+
+  Calques :
+    Rouge  #FF0000 → découpe traversante (laser/CNC)
+    Bleu   #0000FF → gravure (sérigraphie)
+    Gris   #AAAAAA → cotations (ne pas graver)
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="86mm" height="86mm"
+  viewBox="0 0 86 86"
+  version="1.1">
+
+  <defs>
+    <style>
+      .cut      { fill: none; stroke: #FF0000; stroke-width: 0.2; }
+      .engrave  { fill: none; stroke: #0000FF; stroke-width: 0.15; }
+      .dim      { fill: none; stroke: #AAAAAA; stroke-width: 0.1;
+                  stroke-dasharray: 1,0.5; }
+      .outline  { fill: #1A1A2E; stroke: #333366; stroke-width: 0.3; }
+      .text     { font-family: monospace; font-size: 2.5px; fill: #8080CC; }
+      .title    { font-family: monospace; font-size: 3px;
+                  fill: #C0C0FF; font-weight: bold; }
+      .subtitle { font-family: monospace; font-size: 2px; fill: #6060AA; }
+      .warning  { font-family: monospace; font-size: 1.8px; fill: #FF8040; }
+      .zone     { font-family: monospace; font-size: 2px; fill: #4040AA; }
+    </style>
+  </defs>
+
+  <!-- ── Fond panneau ──────────────────────────────────────── -->
+  <rect class="outline" x="0.5" y="0.5" width="85" height="85" rx="2"/>
+
+  <!-- ── Contour extérieur (ligne de coupe) ────────────────── -->
+  <rect class="cut" x="0.15" y="0.15" width="85.7" height="85.7" rx="2"/>
+
+  <!-- ── Découpe CYD 76 × 57 mm ───────────────────────────── -->
+  <!-- Centrée H : x=(86-76)/2=5  Décalée V : y=8 -->
+  <rect class="cut" x="5" y="8" width="76" height="57" rx="1"/>
+
+  <!-- ── 4 trous fixation CYD M2.5 ────────────────────────── -->
+  <circle class="cut" cx="7.75"  cy="10.75" r="1.25"/>
+  <circle class="cut" cx="78.25" cy="10.75" r="1.25"/>
+  <circle class="cut" cx="7.75"  cy="62.25" r="1.25"/>
+  <circle class="cut" cx="78.25" cy="62.25" r="1.25"/>
+
+  <!-- ── 4 trous fixation boîtier M3.5 ────────────────────── -->
+  <circle class="cut" cx="13" cy="4"  r="1.75"/>
+  <circle class="cut" cx="73" cy="4"  r="1.75"/>
+  <circle class="cut" cx="13" cy="73" r="1.75"/>
+  <circle class="cut" cx="73" cy="73" r="1.75"/>
+
+  <!-- ── Connecteur alimentation ø6 mm ─────────────────────── -->
+  <circle class="cut" cx="67" cy="78" r="3"/>
+
+  <!-- ── Gravures / sérigraphie ────────────────────────────── -->
+
+  <!-- Titre principal -->
+  <text class="title"    x="43" y="69.5" text-anchor="middle">HEATING REMOTE</text>
+  <text class="subtitle" x="43" y="73"   text-anchor="middle">2 zones — fil pilote</text>
+  <text class="text"     x="43" y="76.5" text-anchor="middle">Papy Makers</text>
+
+  <!-- Repères zones (côtés de la découpe écran) -->
+  <text class="zone" x="6"  y="22" text-anchor="start">Z1</text>
+  <text class="zone" x="6"  y="50" text-anchor="start">Z2</text>
+
+  <!-- Label connecteur alimentation -->
+  <text class="text" x="57" y="78.5" text-anchor="end">5V DC</text>
+
+  <!-- Avertissement option 230V -->
+  <text class="warning" x="43" y="82"
+        text-anchor="middle">⚠ Option 230V — Habilitation électrique requise</text>
+
+  <!-- ── Cotations (calque dim — exclure du tracé laser) ───── -->
+  <line class="dim" x1="5" y1="6.5" x2="81" y2="6.5"/>
+  <text class="text" x="43" y="6"
+        text-anchor="middle" fill="#444466">76 mm</text>
+
+  <line class="dim" x1="83.5" y1="8" x2="83.5" y2="65"/>
+  <text class="text" x="85" y="37" text-anchor="start" fill="#444466"
+        transform="rotate(90,85,37)">57 mm</text>
+
+</svg>
