@@ -154,10 +154,7 @@ souhaitez soutenir le projet ou gagner du temps, les éléments sont disponibles
 
 | Option | Contenu | Prix indicatif |
 |---|---|---|
-| **Façade seule** | Façade avant 86×86mm | 5 € |
-| **Façade + visserie** | Façade + entretoises + boulons M3 | 8 € |
-| **Kit complet** | CYD modifié + firmware + façade + visserie | 35 € |
-| **Prêt à l'emploi** | Kit complet assemblé et testé | 55 € |
+| **Façade seule** | Façade avant 86×86mm | 8 € |
 
 Frais de port en sus. Expédition depuis la France.
 
